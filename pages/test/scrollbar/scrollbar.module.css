@@ -1,0 +1,37 @@
+:root {
+  --theme-hover: black;
+}
+
+.scrollbar {
+  position: fixed;
+  inset: 0;
+  z-index: 7;
+  padding: 1.67vw 0;
+}
+
+@media (hover: none) {
+  .scrollbar {
+    display: none;
+  }
+}
+
+.scrollbar .track {
+  height: 100%;
+  position: relative;
+}
+
+.scrollbar .thumb {
+  min-height: 3.3vw;
+  width: 0.56vw;
+  background-color: var(--theme-hover);
+  position: absolute;
+  right: 0.56vw;
+  border-radius: 200px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.scrollbar .debug {
+  position: absolute;
+  left: 0.56vw;
+}
