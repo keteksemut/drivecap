@@ -14,7 +14,7 @@
 /coverage
 
 #raw
-/raw
+# /raw
 
 # next.js
 /.next/

@@ -15,6 +15,8 @@ const nextConfig = {
         ],
         as: '*.js',
       },
+      '*.LICENSE': { loaders: [] },
+      '*.txt': { loaders: [] },
     },
   },
 };

@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
 import dynamic from "next/dynamic";
 
-const LenisProvider = dynamic(() => import('@/providers/lenis-provider'), { ssr: false });
+const Layout = dynamic(() => import('@/layout/index'), { ssr: false });
 
 export default function App({ Component, pageProps }) {
   return (
-    <LenisProvider>
+    <Layout>
       <Component {...pageProps} />
-    </LenisProvider>
-  )
-}
+    </Layout>
+  );
+};
+App.displayName = 'App';

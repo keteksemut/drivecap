@@ -1,10 +1,10 @@
+import { useRef, useEffect } from "react";
 import { useWindowSize } from "react-use";
 import useMeasure from "react-use-measure";
 import { useStore } from "@/store/useStore";
 import { useLenis } from "@/hooks/useLenis";
-import style from "./scrollbar.module.css";
-import { useRef, useEffect } from "react";
 import { mapRange } from "@/lib/utils/math";
+import style from "./scrollbar.module.css";
 
 export default function Scrollbar() {
   const lenis = useStore((s) => s.lenis);
