@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@comps": [
+        "./comps/*"
+      ],
+      "@hooks": [
+        "./hooks/*"
+      ]
+    }
+  }
+}
